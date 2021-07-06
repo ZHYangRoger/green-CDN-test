@@ -11,7 +11,7 @@ import (
 func main() {
 	// configure the media directory name and port
 	const mediaDir = "media"
-	port := 8000
+	port := 8080
 
 	// add a handler for the media files
 	http.Handle("/", serveHandler(http.FileServer(http.Dir(mediaDir))))
